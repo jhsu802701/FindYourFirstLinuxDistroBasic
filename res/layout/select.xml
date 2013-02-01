@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textViewPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_purpose" 
+       	/>
+
+    <Spinner
+        android:id="@+id/spinnerPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/purpose_array"
+        android:prompt="@string/question_purpose"
+       	/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+    	/>
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_age" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/age_array"
+        android:prompt="@string/question_age"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        />
+
+    <TextView
+        android:id="@+id/textViewMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_memory" />
+
+    <Spinner
+        android:id="@+id/spinnerMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/memory_array"
+        android:prompt="@string/question_memory"
+        />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>
