@@ -4,11 +4,14 @@ http://developer.android.com/guide/topics/manifest/manifest-intro.html .
 Note that the Intro.java script is utilized FIRST, and the 
 SelectDistro.java script is utilized later. 
 -->
+<!--  android:installLocation="auto" allows the user to move the app from
+internal storage to the SD card. -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jasonhsu.findyourfirstlinuxdistrobasic"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" 
+    android:installLocation="auto" >
 
     <uses-sdk
         android:minSdkVersion="8"
